@@ -3,34 +3,77 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/assets/css/index.css" />
+        <!-- Tailwindcss -->
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <!-- <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
-    /> -->
+        <!-- icons -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+        />
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/assets/css/index.css" />
+        <link rel="stylesheet" href="/assets/css/navbar.css" />
+
         <title>Shree Vijaylaxmi International</title>
     </head>
     <body>
-        <div id="navbar"></div>
+        <nav class="sticky top-0" id="navbar"></nav>
 
-        <main class="max-w-7xl mx-auto mt-10 px-4">
-            <h1 class="text-3xl font-bold text-gray-800">
-                Welcome to My Website
-            </h1>
-            <p class="mt-4 text-gray-600">
-                This is the home page with a reusable navbar.
-            </p>
-            <i class="ph ph-align-top"></i>
+        <main class="">
+            <section
+                class="hero-section space-grotesk flex flex-col text-center"
+                id="hero-section"
+            >
+                <p class="mt-[20vh]">Pure & Natural Guar Gum Solutions,</p>
+                <p>Crafted with Precision and Quality.</p>
+            </section>
+            <section class="about-section" id="about-id">
+                <div class="about-top mt-10 flex items-center justify-center">
+                    <div class="flex items-center w-full max-w-4xl">
+                        <!-- Left line -->
+                        <div class="flex-grow border-t border-[#0000001A]"></div>
+
+                        <!-- Text -->
+                        <span class="p-[20px] text-[14px] uppercase font-semibold text-[#203B14] bg-[#EDF9EE] rounded-full"
+                            >About us</span
+                        >
+
+                        <!-- Right line -->
+                        <div class="flex-grow border-t border-[#0000001A]"></div>
+                    </div>
+                </div>
+
+                <div class="about-content flex flex-col md:flex-row gap-[50px] md:gap-[85px] justify-between w-full h-[50%] p-4 md:p-[100px]" id="about-content">
+                    <div class="about-left-section h-full md:w-[30%] flex flex-col gap-[50px]" id="about-left-section">
+                    </div>
+                    <div class="right-left-section h-full md:w-[80%] flex flex-col gap-[40px]">
+                        <p>Shree Vijaylaxmi International is one of the largest and most trusted manufacturers and exporters of Guar Gum Powder and its derivatives, with over 23 years of excellence, innovation, and quality.</p>
+                        <p>Certified with ISO 9001:2008 and HACCP (ISO 22000:2005), we ensure world-class standards in manufacturing, safety, and efficiency. Our state-of-the-art automated facility, advanced QC lab, and skilled team guarantee precision, consistency, and superior quality.</p>
+                        <p>With an annual capacity of 15,000+ MT, we proudly serve 45+ countries, catering to diverse industries worldwide. Our clientele includes multinational corporations and industry leaders who rely on us for high-performance guar gum solutions tailored to their needs.</p>
+                        <p>Backed by a strong R&D division, we continuously innovate to refine formulations, explore new applications, and develop advanced guar derivatives. This commitment keeps us at the forefront of industry advancements.</p>
+                        <p>At Shree Vijaylaxmi International, customer satisfaction is our core philosophy—we deliver exceptional service, customized solutions, and technical support with transparency and integrity.</p>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Importing scripts -->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/navbar.js"></script>
+        <script src="assets/js/about.js"></script>
     </body>
 </html>
