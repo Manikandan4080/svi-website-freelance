@@ -1,72 +1,140 @@
 <!-- Navbar Component -->
-<nav class="navbar fixed top-0 left-0 right-0 z-50 px-3 py-4">
+<nav class="navbar fixed top-0 left-0 right-0 px-3 py-4">
     <div class="flex items-center justify-between w-full">
         <!-- Logo -->
-        <div class="hidden md:flex items-center space-x-2">
-          <i class="ph ph-globe"></i>
-            <span class="text-[14px] font-[400]">Shree Vijaylaxmi International</span>
+        <div class="hidden lg:flex items-center space-x-2">
+            <a href="/index.html"
+                ><i class="ph ph-globe"></i>
+                <span class="text-[14px] font-[400]"
+                    >Shree Vijaylaxmi International</span
+                ></a
+            >
         </div>
-        <div class="flex md:hidden items-center space-x-2">
-          <i class="ph ph-globe"></i>
-            <span class="text-[14px] font-[400]">Shre</span>
+        <div class="flex lg:hidden items-center space-x-2">
+            <a href="/index.html"
+                ><i class="ph ph-globe"></i>
+                <span class="text-[14px] font-[400]">Shre</span></a
+            >
         </div>
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center gap-[48px]">
-            <a href="#hero-section" class="desktop-nav-item text-gray-700 hover:text-gray-900 font-medium">Home</a>
-            <a href="#about-id" class="desktop-nav-item text-gray-700 hover:text-gray-900 font-medium">About</a>
-            <a href="#products" class="desktop-nav-item text-gray-700 hover:text-gray-900 font-medium">Products</a>
-            <a href="#services" class="desktop-nav-item text-gray-700 hover:text-gray-900 font-medium">Services</a>
-            <a href="#contact" class="desktop-nav-item text-gray-700 hover:text-gray-900 font-medium">Contact</a>
-            <a href="#" class="py-[16px] px-[28px] rounded-full bg-[#203B14] text-white border-none">Get in Touch</a>
+            <a
+                href="/about.html"
+                class="desktop-nav-item text-gray-700 text-nowrap hover:text-gray-900 text-[14px] font-medium uppercase"
+                >About Us</a
+            >
+            <a
+                href="/products.html"
+                class="desktop-nav-item text-gray-700 text-nowrap hover:text-gray-900 text-[14px] font-medium uppercase"
+                >Products</a
+            >
+            <a
+                href="/equipments.html"
+                class="desktop-nav-item text-gray-700 text-nowrap hover:text-gray-900 text-[14px] font-medium uppercase"
+                >Equipment</a
+            >
+            <a
+                href="/contact.html"
+                class="desktop-nav-item text-gray-700 text-nowrap hover:text-gray-900 text-[14px] font-medium uppercase"
+                >Contact Us</a
+            >
+
+            <a
+                href="#"
+                class="py-[16px] px-[28px] text-nowrap rounded-full bg-[#203B14] text-white border-none text-[14px]"
+                >Get in Touch</a
+            >
         </div>
 
         <!-- Mobile Menu Button -->
-        <button id="menu-btn" class="md:hidden text-gray-700 hover:text-gray-900 transition-colors">
+        <button
+            id="menu-btn"
+            class="md:hidden text-gray-700 hover:text-gray-900 transition-colors"
+        >
             <i class="ph ph-list text-2xl icon-rotate"></i>
         </button>
     </div>
 </nav>
 
 <!-- Mobile Menu Overlay -->
-<div id="menu-overlay" class="menu-overlay"></div>
+<aside id="menu-overlay" class="menu-overlay z-[9000]"></aside>
 
 <!-- Mobile Menu -->
-<div id="mobile-menu" class="mobile-menu w-[70%]">
+<aside id="mobile-menu" class="mobile-menu w-[70%] z-[9000]">
     <div class="flex flex-col h-full">
         <!-- Mobile Menu Header -->
-        <div class="flex items-center justify-end px-6 py-4 border-b border-gray-200">
-            <button id="close-menu-btn" class="text-gray-700 hover:text-gray-900 transition-colors">
+        <div
+            class="flex items-center justify-end px-6 py-4 border-b border-gray-200"
+        >
+            <button
+                id="close-menu-btn"
+                class="text-gray-700 hover:text-gray-900 transition-colors"
+            >
                 <i class="ph ph-x text-2xl"></i>
             </button>
         </div>
 
         <!-- Mobile Menu Items -->
         <div class="flex-1 py-8">
-            <div class="space-y-2 px-6">
-                <a href="#hero-section" class="menu-item flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 hover:text-gray-900">
-                    <i class="ph ph-house text-xl"></i>
-                    <span class="font-medium">Home</span>
-                </a>
-                <a href="#about-id" class="menu-item flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 hover:text-gray-900">
-                    <i class="ph ph-info text-xl"></i>
-                    <span class="font-medium">About</span>
-                </a>
-                <a href="#products" class="menu-item flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 hover:text-gray-900">
-                    <i class="ph ph-package text-xl"></i>
-                    <span class="font-medium">Products</span>
-                </a>
-                <a href="#services" class="menu-item flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 hover:text-gray-900">
-                    <i class="ph ph-gear text-xl"></i>
-                    <span class="font-medium">Services</span>
-                </a>
-                <a href="#contact" class="menu-item flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-700 hover:text-gray-900">
-                    <i class="ph ph-phone text-xl"></i>
-                    <span class="font-medium">Contact</span>
-                </a>
+            <div class="space-y-2 px-6 flex flex-col gap-3">
+                <a
+                    href="/about.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >About Us</a
+                >
+                <a
+                    href="/products.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Products</a
+                >
+                <a
+                    href="/equipments.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Equipment</a
+                >
+                <a
+                    href="/contact.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Contact Us</a
+                >
+
+                <a
+                    href="./food-grade-guar-gum.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Food Grade Guar Gum</a
+                >
+                <a
+                    href="./food-grade-guar-gum.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Cationic Guar</a
+                >
+                <a
+                    href="./food-grade-guar-gum.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Guar Split</a
+                >
+                <a
+                    href="./food-grade-guar-gum.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Animal Feed</a
+                >
+                <a
+                    href="./food-grade-guar-gum.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Guar Churi</a
+                >
+                <a
+                    href="./food-grade-guar-gum.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Oil & Gas Industry</a
+                >
+                <a
+                    href="./food-grade-guar-gum.html"
+                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Equipments & Machineries </a
+                >
             </div>
         </div>
-
-       
     </div>
-</div>
+</aside>

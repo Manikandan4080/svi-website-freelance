@@ -34,14 +34,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
     aboutCounters.forEach((item) => {
         const wrapper = document.createElement("div");
-        wrapper.className = "text-left";
+        wrapper.className = "text-left border-b-2 pb-[24px] border-[#0000001A] w-full ";
 
         const number = document.createElement("h2");
-        number.className = "text-4xl font-bold text-black";
+        number.className = "text-[54px] font-bold font-[700] text-nowrap";
         number.textContent = "0";
 
         const subtitle = document.createElement("p");
-        subtitle.className = "text-sm uppercase tracking-wide text-gray-700 mt-2";
+        subtitle.className = "text-[14px] uppercase tracking-wide font-[700]";
         subtitle.textContent = item.subtitle;
 
         wrapper.appendChild(number);

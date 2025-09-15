@@ -1,0 +1,12 @@
+.footer {
+    font-family: "Space Grotesk", sans-serif;
+    color: #ffffff;
+}
+
+.footer h4 {
+    letter-spacing: 0.5px;
+}
+
+.footer iframe {
+    border: none;
+}

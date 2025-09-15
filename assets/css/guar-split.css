@@ -1,0 +1,8 @@
+.row-hover {
+    transition: all 0.3s ease;
+}
+
+.row-hover:hover {
+    background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+    transform: translateY(-1px);
+}

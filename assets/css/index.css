@@ -28,3 +28,84 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
+#globe-img-container {
+    position: relative;
+    width: 100%;
+    background-image: url("../images/globe-img.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#globe-img-container::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+
+#timeline-progress {
+    transition: height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.row-hover {
+    transition: all 0.3s ease;
+}
+
+.row-hover:hover {
+    background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+    transform: translateY(-1px);
+}
+
+
+#equipment-image-section,#equipment-image-section-1{
+    position: relative;
+    width: 100%;
+    background-image: url("../images/timeline-img-1.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+ @keyframes rotateBorder {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animate-gradient {
+      background-size: 600% 600%;
+      animation: rotateBorder 4s linear infinite;
+    }
+
+
+@media (min-width: 768px) {
+    #globe-img-container::before {
+        padding-top: 50%; /* 2:1 aspect ratio for desktop */
+    }
+}
+
+@media (min-width: 768px) {
+    #globe-img-container {
+        background-size: cover;
+        height: 65dvh;
+        background-attachment: fixed;
+    }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%); /* moves by 1/3 since we duplicated 3 times */
+  }
+}
+
+.animate-scroll {
+  animation: scroll 60s linear infinite; /* SLOW: 60s per full cycle */
+}
+
