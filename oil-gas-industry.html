@@ -35,7 +35,7 @@
 
         <main class="flex gap-4 relative">
             <aside
-                class="sticky hidden md:block top-0 left-0 h-[100dvh] w-fit md:pl-[40px] md:pr-[20px]"
+                class="sticky hidden lg:block top-0 left-0 h-[100dvh] w-fit md:pl-[40px] md:pr-[20px]"
             >
                 <div class="mt-[17vh] md:mt-[20dvh] relative">
                     <!-- Vertical line -->
@@ -216,7 +216,7 @@
                         </div>
                     </div>
 
-                    <div id="applications-list"></div>
+                    <div class="w-[90%]" id="applications-list"></div>
                 </section>
 
                 <!-- List 2 -->
@@ -327,22 +327,24 @@
 
                 <!-- Static navigation section -->
                 <section
-                    class="w-full h-30mt-10 md:mt-[64px] mb-20 flex justify-center"
+                    class="w-full mt-10 md:mt-[64px] mb-20 flex justify-center items-center"
                 >
                     <div
-                        class="w-[90%] md:w-[80%] grid grid-cols-3 items-center justify-between px-[16px]"
+                        class="w-[90%] lg:w-[80%] flex flex-col md:flex-row justify-center md:justify-between items-center gap-5"
                     >
                         <a
                             href="./guar-churi.html"
-                            class="w-fit py-[20px] px-[60px] text-[16px] border border-[#E6E6E6] rounded-full flex justify-center items-center gap-[10px] text-nowrap"
+                            class="w-fit py-[20px] px-[40px] text-[16px] border border-[#E6E6E6] rounded-full flex justify-center items-center gap-[10px] text-nowrap"
                             ><i class="ph ph-caret-left"> </i>Guar Churi
                         </a>
-                        <p class="text-[#6E6F70] text-[14px] text-center">
+                        <p
+                            class="text-[#6E6F70] text-[14px] text-center text-nowrap"
+                        >
                             Oil & Gas Industry
                         </p>
                         <a
                             href="./equipments-and-machineries.html"
-                            class="w-fit py-[20px] px-[60px] text-[16px] border border-[#E6E6E6] rounded-full flex justify-center items-center gap-[10px] text-nowrap"
+                            class="w-fit py-[20px] px-[40px] text-[16px] border border-[#E6E6E6] rounded-full flex justify-center items-center gap-[10px] text-nowrap"
                             >Equipments & Machineries
                             <i class="ph ph-caret-right"></i
                         ></a>

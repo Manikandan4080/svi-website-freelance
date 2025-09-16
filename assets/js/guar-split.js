@@ -73,10 +73,10 @@ function renderSpecificationsTable() {
     <div class="bg-gradient-to-r from-[#203B14] to-[#16a34a] text-white px-8 py-6">
       <div class="grid grid-cols-2 gap-8">
         <div class="text-center">
-          <h3 class="text-xl font-bold tracking-wide">PARTICULARS</h3>
+          <h3 class="text-[12px] lg:text-xl font-bold tracking-wide text-center">PARTICULARS</h3>
         </div>
         <div class="text-center">
-          <h3 class="text-xl font-bold tracking-wide">SPECIFICATIONS</h3>
+          <h3 class="text-[12px] lg:text-xl font-bold tracking-wide text-center">SPECIFICATIONS</h3>
         </div>
       </div>
     </div>
@@ -85,10 +85,10 @@ function renderSpecificationsTable() {
         .map(
           (row, i) => `
         <div class="grid grid-cols-2 gap-8 px-4 py-3 border-b border-gray-100 row-hover animate-fade-in animate-delay-${i + 2}">
-          <div class="flex items-center justify-center">
+          <div class="flex text-[12px] lg:text-xl items-center justify-center text-center">
             <span class="spec-badge">${row.label}</span>
           </div>
-          <div class="flex items-center justify-center">
+          <div class="flex text-[12px] lg:text-xl items-center justify-center text-center">
             <div class="value-highlight">${row.value}</div>
           </div>
         </div>
