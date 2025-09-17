@@ -39,7 +39,9 @@
                 Know more about us
             </h1>
             <!-- Title image -->
-            <section class="w-full h-[30vh] md:h-[45dvh] bg-cover flex justify-center md:mt-20 p-[16px]">
+            <section
+                class="w-full h-[30vh] md:h-[45dvh] bg-cover flex justify-center md:mt-20 p-[16px]"
+            >
                 <section
                     class="w-[70%] h-full rounded-lg bg-contain bg-center bg-norepeat w-full relative"
                     id="equipment-image-section"
@@ -73,57 +75,47 @@
                     </div>
                 </div>
 
-                <p class="w-[90%] md:w-[80%] text-center">
-                    Welcome to Shree Vijaylaxmi International, a global leader in the manufacturing and export of Guar Gum Equipment and solutions. With over two decades of experience, we are dedicated to driving innovation, quality, and customer satisfaction in every aspect of our business. Our journey began with a vision to transform the guar gum industry through advanced technology, expert craftsmanship, and a relentless commitment to excellence. Today, we proudly serve clients across the world, delivering state-of-the-art machinery and tailored solutions that empower industries to achieve new heights of productivity and success.
-                </p>
-            </section>
-
-            <!-- Key Benefits -->
-            <section
-                class="flex flex-col items-center gap-[64px] mt-10 md:mt-[64px]"
-                id=""
-            >
                 <div
-                    class="introduction flex items-center  w-[90%] md:w-[80%] justify-center"
+                    class="flex flex-col gap-[16px] w-full justify-center items-center"
                 >
-                    <div class="flex items-center w-full">
-                        <!-- Left line -->
-                        <div
-                            class="flex-grow border-t border-[#0000001A]"
-                        ></div>
-
-                        <!-- Text -->
-                        <span
-                            class="p-[20px] text-[14px] uppercase font-semibold text-[#203B14] bg-[#EDF9EE] rounded-full"
-                        >Why Choose Us</span>
-
-                        <!-- Right line -->
-                        <div
-                            class="flex-grow border-t border-[#0000001A]"
-                        ></div>
-                    </div>
+                    <p class="w-[90%] md:w-[80%] text-center gilroy-regular">
+                        We introduce ourselves as one of the largest
+                        Manufacturers and Exporters of Guar Gum Powder and its
+                        derivatives for more than 12 years. We are an ISO 9001:
+                        2008 and HACCP (ISO 22000: 2005) Certified Company. Our
+                        plant is fully automatic with latest technology, quality
+                        control laboratory and trained skilled personnel in our
+                        plant. We are exporting this product to more than 45
+                        countries worldwide with an annual production of over
+                        15000 MT.
+                    </p>
+                    <p class="w-[90%] md:w-[80%] text-center gilroy-regular">
+                        We cater to a wide range of industries such as Food,
+                        Oil/Gas Drilling, Fracking, Textile, Paper, Explosives,
+                        Constructions, Paints, Mining, etc. We are supplying our
+                        products to all over the world. Our customers are
+                        Multinational, world-renowned companies. Our Commitment
+                        towards our quality and the customer has brought SHREE
+                        VIJAYLAXMI ENTERPRISES worldwide recognition of a high
+                        quality guar gum supplier.
+                    </p>
                 </div>
-
-                <ul class="list-disc leading-[36px] text-[14px] ml-10 md:ml-0">
-                    <li>Industry Leadership: Recognized as India’s top and largest manufacturer of Guar Gum Equipment.</li>
-                    <li>Proven Expertise: Decades of experience in designing and delivering high-performance machinery.</li>
-                    <li>Global Reach: Over 300 installations in India and abroad, serving a growing international market.</li>
-                    <li>Trusted Relationships: Strong partnerships with suppliers, customers, and service providers.</li>
-                    <li>Skilled Team: Backed by an experienced and passionate team dedicated to innovation.</li>
-                    <li>Quality Commitment: Adherence to the highest standards of quality and customer satisfaction.</li>
-                    <li>Cutting-Edge Technology: Use of advanced technologies to ensure globally competitive equipment.</li>
-                    <li>Customization: Tailor-made solutions to meet client-specific requirements.</li>
-                    <li>Sustainability: Eco-friendly manufacturing practices supporting sustainable development.</li>
-                </ul>
             </section>
-            
+            <div id="whatsapp-chatbot"></div>
         </main>
+
+        <div class="relative w-full mb-20 overflow-hidden group">
+            <div id="marquee-track" class="flex gap-[24px] animate-scroll">
+                <!-- JS will inject <a> elements with image + title -->
+            </div>
+        </div>
 
         <footer id="footer"></footer>
 
         <!-- Importing scripts -->
         <script src="./assets/js/main.js"></script>
         <script src="./assets/js/navbar.js"></script>
+        <script src="./assets/js/carosel.js"></script>
         <script src="./assets/js/footer.js"></script>
     </body>
 </html>

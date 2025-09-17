@@ -2,11 +2,32 @@
 
 // Initialize navbar functionality
 function initNavbar() {
+
     // Get DOM elements
     const menuBtn = document.getElementById('menu-btn');
     const closeMenuBtn = document.getElementById('close-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuOverlay = document.getElementById('menu-overlay');
+
+    // Highlight active tab logic
+    function highlightActiveTab() {
+        // Get current page filename (e.g., about.html)
+        const path = window.location.pathname;
+        const page = path.substring(path.lastIndexOf('/') + 1);
+        // Select all nav links (desktop and mobile)
+        const navLinks = document.querySelectorAll('.desktop-nav-item');
+        navLinks.forEach(link => {
+            // Remove previous underline if any
+            link.classList.remove('active-nav');
+            // If link href matches current page, add underline
+            if (link.getAttribute('href') === page) {
+                link.classList.add('active-nav');
+            }
+        });
+    }
+
+    // Call highlightActiveTab after DOM is ready
+    highlightActiveTab();
 
     // Check if elements exist before adding event listeners
     if (!menuBtn || !closeMenuBtn || !mobileMenu || !menuOverlay) {
@@ -90,6 +111,20 @@ function loadNavbar() {
                 navbarContainer.innerHTML = html;
                 // Initialize navbar functionality after loading
                 initNavbar();
+                // Highlight active tab after navbar is loaded
+                // (in case DOM changes)
+                const highlightActiveTab = () => {
+                    const path = window.location.pathname;
+                    const page = path.substring(path.lastIndexOf('/') + 1);
+                    const navLinks = document.querySelectorAll('.desktop-nav-item');
+                    navLinks.forEach(link => {
+                        link.classList.remove('active-nav');
+                        if (link.getAttribute('href') === page) {
+                            link.classList.add('active-nav');
+                        }
+                    });
+                };
+                highlightActiveTab();
             } else {
                 console.error('Navbar container with id "navbar" not found');
             }

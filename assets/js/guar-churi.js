@@ -6,19 +6,18 @@ const specsData = [
     { label: "FIBER", value: "3 - 5%" },
 ];
 
-// Render specifications table
 function renderSpecificationsTable() {
   const container = document.getElementById("specifications-table");
   if (!container) return;
 
   container.innerHTML = `
-    <div class="bg-gradient-to-r from-[#203B14] to-[#16a34a] text-white px-8 py-6">
+    <div class="bg-gradient-to-r from-[#203B14] to-[#16a34a] text-white p-[16px] rounded-t-[8px]">
       <div class="grid grid-cols-2 gap-8">
         <div class="text-center">
-          <h3 class="text-[12px] lg:text-xl font-bold tracking-wide text-center">PARTICULARS</h3>
+          <h3 class="text-[12px] font-bold tracking-wide text-center">PARTICULARS</h3>
         </div>
         <div class="text-center">
-          <h3 class="text-[12px] lg:text-xl font-bold tracking-wide text-center">SPECIFICATIONS</h3>
+          <h3 class="text-[12px] font-bold tracking-wide text-center">SPECIFICATIONS</h3>
         </div>
       </div>
     </div>
@@ -27,10 +26,10 @@ function renderSpecificationsTable() {
         .map(
           (row, i) => `
         <div class="grid grid-cols-2 gap-8 px-4 py-3 border-b border-gray-100 row-hover animate-fade-in animate-delay-${i + 2}">
-          <div class="flex text-[12px] lg:text-xl items-center justify-center text-center">
+          <div class="flex text-[12px] items-center justify-center text-center">
             <span class="spec-badge">${row.label}</span>
           </div>
-          <div class="flex text-[12px] lg:text-xl items-center justify-center text-center">
+          <div class="flex text-[12px] items-center justify-center text-center">
             <div class="value-highlight">${row.value}</div>
           </div>
         </div>
@@ -65,7 +64,7 @@ function renderApplicationsList(target, data) {
 
     container.innerHTML = `
     <ul class="list-disc leading-[36px] text-[14px] ml-10 md:ml-0">
-      ${data.map((item) => `<li>${item}</li>`).join("")}
+      ${data.map((item) => `<li class="gilroy-regular">${item}</li>`).join("")}
     </ul>
   `;
 }

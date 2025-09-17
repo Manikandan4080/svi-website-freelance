@@ -1,3 +1,11 @@
+/* Underline for active nav tab */
+.active-nav {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+    color: #203B14 !important;
+    font-weight: 600;
+}
 /* Navbar Component Styles */
 
 /* Main navbar styles */

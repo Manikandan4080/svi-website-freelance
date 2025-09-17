@@ -34,98 +34,43 @@
     <body>
         <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
 
-        <main class="mt-[17dvh] mb-20">
+        <main class="mt-[17dvh]">
             <!-- Title -->
-            <h1 class="text-[16px] md:text-[36px] text-center">
-                Our products
-            </h1>
+            <h1 class="text-[16px] md:text-[36px] text-center">Our products</h1>
             <!-- Title image -->
-            <section class="w-full h-[30vh] md:h-[45dvh] bg-cover flex justify-center md:mt-20 p-[16px]">
+            <section
+                class="w-full h-[30vh] md:h-[45dvh] bg-cover flex justify-center md:mt-20 p-[16px]"
+            >
                 <section
                     class="w-[70%] h-full rounded-lg bg-contain bg-center bg-norepeat w-full relative"
                     id="equipment-image-section"
                 ></section>
             </section>
 
-            <!-- Introduction -->
-            <section
-                class="flex flex-col items-center gap-[64px] mt-5 md:mt-[64px]"
-                id=""
-            >
-                <div
-                    class="introduction flex items-center w-[90%] md: w-[90%] md:w-[70%] justify-center"
-                >
-                    <div class="flex items-center w-full">
-                        <!-- Left line -->
-                        <div
-                            class="flex-grow border-t border-[#0000001A]"
-                        ></div>
-
-                        <!-- Text -->
-                        <span
-                            class="p-[20px] text-[14px] uppercase font-semibold text-[#203B14] bg-[#EDF9EE] rounded-full"
-                            >Introduction</span
-                        >
-
-                        <!-- Right line -->
-                        <div
-                            class="flex-grow border-t border-[#0000001A]"
-                        ></div>
-                    </div>
-                </div>
-
-                <p class="w-[90%] md:w-[70%] text-center">
-                    Discover our comprehensive range of Guar Gum products and solutions, designed to meet the diverse needs of industries worldwide. From food and beverages to oil & gas, animal feed, and personal care, our portfolio delivers exceptional quality, performance, and reliability. Each product is crafted with precision, backed by decades of expertise, and tailored to help you achieve superior results in your applications.
-                </p>
-            </section>
-
             <section
                 class="flex flex-col items-center gap-[64px] mt-10 md:mt-[64px]"
                 id=""
             >
-                <section class="p-[16px] md:p-[32px] lg:p-[64px]" id="products"></section>
+                <section
+                    class="p-[16px] md:p-[32px] lg:p-[64px]"
+                    id="products"
+                ></section>
             </section>
-            
-
-            <!-- Conclusion -->
-            <section
-                class="flex flex-col items-center gap-[64px] mt-10 md:mt-[64px]"
-                id=""
-            >
-                <div
-                    class="introduction flex items-center  w-[90%] md:w-[70%] justify-center"
-                >
-                    <div class="flex items-center w-full">
-                        <!-- Left line -->
-                        <div
-                            class="flex-grow border-t border-[#0000001A]"
-                        ></div>
-
-                        <!-- Text -->
-                        <span
-                            class="p-[20px] text-[14px] uppercase font-semibold text-[#203B14] bg-[#EDF9EE] rounded-full"
-                            >Conclusion</span
-                        >
-
-                        <!-- Right line -->
-                        <div
-                            class="flex-grow border-t border-[#0000001A]"
-                        ></div>
-                    </div>
-                </div>
-
-                <p class=" w-[90%] md:w-[70%] text-center">
-                    At Shree Vijaylaxmi International, we are committed to delivering not just products, but complete solutions that empower your business. Our focus on innovation, quality, and customer satisfaction ensures you receive the best guar gum products and support in the industry. Partner with us for a future of growth, reliability, and success.
-                </p>
-            </section>
-            
+            <div id="whatsapp-chatbot"></div>
         </main>
+
+        <div class="relative w-full mb-20 overflow-hidden group">
+            <div id="marquee-track" class="flex gap-[24px] animate-scroll">
+                <!-- JS will inject <a> elements with image + title -->
+            </div>
+        </div>
 
         <footer id="footer"></footer>
 
         <!-- Importing scripts -->
         <script src="./assets/js/main.js"></script>
         <script src="./assets/js/navbar.js"></script>
+        <script src="./assets/js/carosel.js"></script>
         <script src="./assets/js/products.js"></script>
         <script src="./assets/js/footer.js"></script>
     </body>

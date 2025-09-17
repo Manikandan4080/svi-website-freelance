@@ -26,7 +26,7 @@ function renderApplicationsList(target, data) {
 
     container.innerHTML = `
     <ul class="list-disc leading-[36px] text-[14px] ml-10 md:ml-0">
-      ${data.map((item) => `<li>${item}</li>`).join("")}
+      ${data.map((item) => `<li class="gilroy-regular">${item}</li>`).join("")}
     </ul>
   `;
 }

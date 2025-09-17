@@ -31,7 +31,10 @@ function animateCounter(element, target, suffix = "", duration = 2000) {
 
 window.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("about-left-section");
+    let hasAnimated = false;
 
+    // Prepare the counter elements but don't animate yet
+    const numberElements = [];
     aboutCounters.forEach((item) => {
         const wrapper = document.createElement("div");
         wrapper.className = "text-left border-b-2 pb-[24px] border-[#0000001A] w-full ";
@@ -48,6 +51,28 @@ window.addEventListener("DOMContentLoaded", () => {
         wrapper.appendChild(subtitle);
         container.appendChild(wrapper);
 
-        animateCounter(number, item.count, item.countText || "");
+        numberElements.push({ number, item });
     });
+
+    // Intersection Observer to trigger animation
+    const aboutSection = document.getElementById("about-id");
+    if (aboutSection) {
+        const observer = new window.IntersectionObserver(
+            (entries, obs) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && !hasAnimated) {
+                        hasAnimated = true;
+                        numberElements.forEach(({ number, item }) => {
+                            animateCounter(number, item.count, item.countText || "");
+                        });
+                        obs.disconnect();
+                    }
+                });
+            },
+            {
+                threshold: 0.3, // Adjust as needed
+            }
+        );
+        observer.observe(aboutSection);
+    }
 });

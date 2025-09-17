@@ -40,12 +40,15 @@
                 class="hero-section space-grotesk flex flex-col text-center"
                 id="hero-section"
             >
-                <p class="mt-[20vh]">Pure & Natural Guar Gum Solutions,</p>
-                <p>Crafted with Precision and Quality.</p>
+                <p class="mt-[20vh] gilroy-medium font-normal">Pure & Natural Guar Gum Solutions,</p>
+                <p class="gilroy-medium font-normal">Crafted with Precision and Quality.</p>
             </section>
 
             <!-- About section -->
-            <section class="about-section flex flex-col items-center justify-center" id="about-id">
+            <section
+                class="about-section flex flex-col items-center justify-center"
+                id="about-id"
+            >
                 <div
                     class="about-top mt-10 flex items-center w-[90%] justify-center"
                 >
@@ -77,7 +80,7 @@
                         id="about-left-section"
                     ></div>
                     <div
-                        class="right-left-section h-full lg:w-[80%] flex flex-col gap-[40px]"
+                        class="right-left-section gilroy-regular h-full lg:w-[80%] flex flex-col gap-[40px]"
                     >
                         <p class="text-[16px] leading-[28px]">
                             Shree Vijaylaxmi International is one of the largest
@@ -130,7 +133,9 @@
 
             <!-- Timeline -->
             <section class="flex flex-col w-full justify-center">
-                <div class="mt-10 flex flex-col items-center justify-center w-full">
+                <div
+                    class="mt-10 flex flex-col items-center justify-center w-full"
+                >
                     <div class="flex items-center w-[90%]">
                         <!-- Left line -->
                         <div
@@ -148,7 +153,14 @@
                             class="flex-grow border-t border-[#0000001A]"
                         ></div>
                     </div>
-                    <p class="w-[90%] text-center leading-[28px] mt-20">From food and cosmetics to animal nutrition, oil & gas, and industrial applications, Shree Vijaylaxmi International offers a complete range of guar gum products and processing machinery. Each solution is designed to deliver consistency, quality, and performance for industries worldwide.</p>
+                    <p class="w-[90%] text-center gilroy-regular leading-[28px] mt-20 mb-10">
+                        From food and cosmetics to animal nutrition, oil & gas,
+                        and industrial applications, Shree Vijaylaxmi
+                        International offers a complete range of guar gum
+                        products and processing machinery. Each solution is
+                        designed to deliver consistency, quality, and
+                        performance for industries worldwide.
+                    </p>
                 </div>
                 <section
                     id="timeline"
@@ -157,7 +169,10 @@
             </section>
 
             <!-- Application area -->
-            <section class="flex flex-col gap-[64px] mb-[64px]" id="application-area">
+            <section
+                class="flex flex-col gap-[64px] mb-[64px]"
+                id="application-area"
+            >
                 <div class="mt-10 flex items-center justify-center w-full">
                     <div class="flex items-center w-[90%]">
                         <!-- Left line -->
@@ -179,7 +194,7 @@
                 </div>
 
                 <div class="w-full flex justify-center">
-                    <p class="text-[16px] leading-[28px] w-[90%] text-center">
+                    <p class="text-[16px] gilroy-regular leading-[28px] w-[90%] text-center">
                         From food and cosmetics to animal nutrition, oil & gas,
                         and industrial applications, Shree Vijaylaxmi
                         International offers a complete range of guar gum
@@ -190,19 +205,21 @@
                 </div>
 
                 <!-- Marquee Slider -->
-                <div
-                    class="relative w-full overflow-hidden group"
-                >
-                    <div id="marquee-track" class="flex gap-[24px] animate-scroll">
+                <div class="relative w-full overflow-hidden group">
+                    <div
+                        id="marquee-track"
+                        class="flex gap-[24px] animate-scroll"
+                    >
                         <!-- JS will inject <a> elements with image + title -->
                     </div>
                 </div>
             </section>
+
+            <!-- Chatbot container -->
+            <div id="whatsapp-chatbot"></div>
         </main>
 
-        <footer id="footer">
-
-        </footer>
+        <footer id="footer"></footer>
 
         <!-- Importing scripts -->
         <script src="./assets/js/main.js"></script>

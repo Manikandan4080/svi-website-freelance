@@ -65,8 +65,17 @@ function renderImages() {
     fadeBottom.className = "pointer-events-none absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black to-transparent z-10";
 
     const overlay = document.createElement("div");
-    overlay.className = "absolute bottom-[20px] left-[20px] text-white text-[16px] font-semibold z-20";
-    overlay.textContent = item.title;
+    overlay.className = "absolute bottom-[20px] left-[20px] text-white text-[16px] font-semibold z-20 flex items-center gap-2";
+
+    // Title span
+    const titleSpan = document.createElement("span");
+    titleSpan.textContent = item.title;
+    overlay.appendChild(titleSpan);
+
+    // Icon
+    const icon = document.createElement("i");
+    icon.className = "ph ph-arrow-up-right text-[18px] ml-1";
+    overlay.appendChild(icon);
 
     link.appendChild(img);
     link.appendChild(fadeTop);

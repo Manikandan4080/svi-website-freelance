@@ -81,10 +81,10 @@ function renderApplications() {
     const cardsHTML = applications
         .map(
             (app) => `
-            <div class="flex flex-col gap-[26px] border border-[#ECECEC] rounded-lg p-[24px] w-full group hover:bg-[#203B14] duration-500"">
-                <i class="${app.icon} text-[24px] group-hover:text-white transition-colors duration-500"></i>
-                <h3 class="text-[20px] font-normal group-hover:text-white transition-colors duration-500">${app.title}</h3>
-                <p class="text-[16px] text-[#6E6F70] group-hover:text-gray-200 transition-colors duration-500">${app.desc}</p>
+            <div class="flex flex-col gap-[24px] border border-[#ECECEC] rounded-lg p-[24px] w-full duration-500"">
+                <i class="${app.icon} text-[24px] transition-colors duration-500"></i>
+                <h3 class="text-[20px] gilroy-regular font-bold transition-colors duration-500">${app.title}</h3>
+                <p class="text-[16px] gilroy-regular text-[#6E6F70] transition-colors duration-500">${app.desc}</p>
             </div>
         `
         )
@@ -97,6 +97,7 @@ function renderApplications() {
         </div>
     `;
 }
+
 
 // Run after DOM is ready
 document.addEventListener("DOMContentLoaded", renderApplications);

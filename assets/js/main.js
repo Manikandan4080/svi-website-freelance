@@ -171,3 +171,24 @@ loadTimeline("timeline", "components/timeline.html");
 
 // Uncomment the line below to use the simpler approach instead:
 // setTimeout(() => initTimelineSimple(), 1000);
+
+
+function renderWhatsAppButton() {
+    const container = document.getElementById("whatsapp-chatbot");
+    if (!container) return;
+
+    const supportNumber = "+919829021864"; // your WhatsApp number
+
+    container.innerHTML = `
+        <div id="wa-bot-wrapper" class="fixed bottom-6 right-6 z-[2000]">
+            <a href="https://wa.me/${supportNumber}" target="_blank" 
+               class="bg-green-500 rounded-full p-4 flex justify-center items-center shadow-lg hover:bg-green-600 transition-all flex items-center justify-center">
+                <i class="ph ph-whatsapp-logo text-white text-3xl"></i>
+            </a>
+        </div>
+    `;
+}
+// Call it
+renderWhatsAppButton();
+
+

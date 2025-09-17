@@ -63,8 +63,8 @@ function renderApplications() {
                 <div class="absolute inset-0 z-10 transition-all duration-500 opacity-0 group-hover:opacity-100 bg-black/65"></div>
                 <div class="relative z-20 flex flex-col gap-[16px] transition-colors duration-500">
                     <i class="${app.icon} text-[24px]"></i>
-                    <h3 class="text-[20px] font-normal">${app.title}</h3>
-                    <p class="text-[16px]">${app.desc}</p>
+                    <h3 class="text-[20px] gilroy-regular font-normal">${app.title}</h3>
+                    <p class="text-[16px] gilroy-regular">${app.desc}</p>
                 </div>
             </a>
         `
