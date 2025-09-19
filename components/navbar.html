@@ -20,7 +20,12 @@
         <!-- Desktop Navigation -->
 
         <div class="flex gap-[24px] items-center">
-            <div class="hidden md:flex items-center gap-[48px]">
+            <div class="hidden lg:flex items-center gap-[48px]">
+                <a
+                    href="index.html"
+                    class="desktop-nav-item text-gray-700 text-nowrap hover:text-gray-900 text-[14px] font-medium uppercase"
+                    >Home</a
+                >
                 <a
                     href="about.html"
                     class="desktop-nav-item text-gray-700 text-nowrap hover:text-gray-900 text-[14px] font-medium uppercase"
@@ -28,8 +33,7 @@
                 >
                 <div class="relative group">
                     <!-- Products Link -->
-                    <a
-                        href="products.html"
+                    <p
                         class="desktop-nav-item text-gray-700 text-nowrap hover:text-gray-900 text-[14px] font-medium uppercase flex items-center gap-1"
                     >
                         Products
@@ -46,7 +50,7 @@
                                 d="M19 9l-7 7-7-7"
                             />
                         </svg>
-                    </a>
+                    </p>
 
                     <!-- Dropdown -->
                     <div
@@ -86,7 +90,7 @@
                 </div>
 
                 <a
-                    href="equipments.html"
+                    href="equipments-and-machineries.html"
                     class="desktop-nav-item text-gray-700 text-nowrap hover:text-gray-900 text-[14px] font-medium uppercase"
                     >Equipment</a
                 >
@@ -104,7 +108,7 @@
             <!-- Mobile Menu Button -->
             <button
                 id="menu-btn"
-                class="md:hidden text-gray-700 hover:text-gray-900 transition-colors"
+                class="lg:hidden text-gray-700 hover:text-gray-900 transition-colors"
             >
                 <i class="ph ph-list text-2xl icon-rotate"></i>
             </button>
@@ -116,11 +120,11 @@
 <aside id="menu-overlay" class="menu-overlay z-[9000]"></aside>
 
 <!-- Mobile Menu -->
-<aside id="mobile-menu" class="mobile-menu w-[70%] z-[9000]">
+<aside id="mobile-menu" class="mobile-menu w-[100%] md:w-[50%] z-[9000] overflow-auto relative">
     <div class="flex flex-col h-full">
         <!-- Mobile Menu Header -->
         <div
-            class="flex items-center justify-end px-6 py-4 border-b border-gray-200"
+            class="flex items-center justify-end p-[12px] z-[9001] border-b border-gray-200 sticky top-0 bg-white"
         >
             <button
                 id="close-menu-btn"
@@ -131,26 +135,64 @@
         </div>
 
         <!-- Mobile Menu Items -->
-        <div class="flex-1 py-8">
-            <div class="space-y-2 px-6 flex flex-col gap-3">
+        <div class="flex-1 bg-white">
+            <div class="flex flex-col gap-[36px] p-[24px]">
+                <a
+                    href="index.html"
+                    class="desktop-nav-item text-[14px] font-medium uppercase"
+                    >Home</a
+                >
+                <div class="h-[1px] w-full bg-[#E6E6E6]"></div>
                 <a
                     href="about.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    class="desktop-nav-item text-[14px] font-medium uppercase"
                     >About Us</a
                 >
+                <div class="h-[1px] w-full bg-[#E6E6E6]"></div>
+                <p
+                    class="desktop-nav-item text-[14px] text-[#6E6F70] disable font-medium uppercase"
+                >
+                    Products
+                </p>
                 <a
-                    href="products.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
-                    >Products</a
+                    href="food-grade-guar-gum.html"
+                    class="text-[14px] font-medium uppercase"
+                    >Food Grade Guar Gum</a
                 >
                 <a
-                    href="equipments.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
-                    >Equipment</a
+                    href="cationic-guar.html"
+                    class="text-[14px] font-medium uppercase"
+                    >Cationic Guar</a
                 >
+                <a
+                    href="guar-split.html"
+                    class="text-[14px] font-medium uppercase"
+                    >Guar Split</a
+                >
+                <a
+                    href="animal-feed.html"
+                    class="text-[14px] font-medium uppercase"
+                    >Animal Feed</a
+                >
+                <a
+                    href="guar-churi.html"
+                    class="text-[14px] font-medium uppercase"
+                    >Guar Churi</a
+                >
+                <a
+                    href="oil-gas-industry.html"
+                    class="text-[14px] font-medium uppercase"
+                    >Oil & Gas Industry</a
+                >
+                <a
+                    href="equipments-and-machineries.html"
+                    class="desktop-nav-item text-[14px] font-medium uppercase"
+                    >Equipments & Machineries </a
+                >
+                <div class="h-[1px] w-full bg-[#E6E6E6]"></div>
                 <a
                     href="contact.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
+                    class="desktop-nav-item text-[14px] font-medium uppercase"
                     >Contact Us</a
                 >
 

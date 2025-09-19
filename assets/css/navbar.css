@@ -122,14 +122,9 @@
         width: 280px;
     }
 }
-
+*/
 @media (max-width: 480px) {
-    .mobile-menu {
-        width: 100%;
-        right: -100%;
+    .active-nav{
+        text-decoration: none;
     }
-    
-    .mobile-menu.active {
-        right: 0;
-    }
-} */
+} 

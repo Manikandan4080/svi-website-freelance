@@ -39,7 +39,7 @@ const images = [
     title: "Equipments & Machineries",
     image: "assets/images/brioche-and-bread.svg",
     alt: "Equipments & Machineries",
-    link: "equipments.html",
+    link: "equipments-and-machineries.html",
   },
 ];
 
