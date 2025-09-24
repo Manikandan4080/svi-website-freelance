@@ -1,43 +1,43 @@
 const images = [
   {
     title: "Food Grade Guar Gum",
-    image: "assets/images/icecream.svg",
+    image: "assets/images/food-guar-carousel.svg",
     alt: "Food Grade Guar Gum",
     link: "food-grade-guar-gum.html",
   },
   {
     title: "Cationic Guar",
-    image: "assets/images/beverage.svg",
+    image: "assets/images/cationic-guar-carousel.svg",
     alt: "Cationic Guar",
     link: "cationic-guar.html",
   },
   {
     title: "Guar Split",
-    image: "assets/images/brioche-and-bread.svg",
+    image: "assets/images/guar-split-carousel.svg",
     alt: "Guar Split",
     link: "guar-split.html",
   },
   {
     title: "Animal Feed",
-    image: "assets/images/confectionary.svg",
+    image: "assets/images/animal-feed-carousel.svg",
     alt: "Animal Feed",
     link: "animal-feed.html",
   },
   {
     title: "Guar Churi",
-    image: "assets/images/icecream.svg",
+    image: "assets/images/guar-churi-carousel.svg",
     alt: "Guar Churi",
     link: "guar-churi.html",
   },
   {
     title: "Oil & Gas Industry",
-    image: "assets/images/beverage.svg",
+    image: "assets/images/oil-and-gas-carousel.svg",
     alt: "Oil & Gas Industry",
     link: "oil-gas-industry.html",
   },
   {
     title: "Equipments & Machineries",
-    image: "assets/images/brioche-and-bread.svg",
+    image: "assets/images/guar-gum-equipment-carousel.svg",
     alt: "Equipments & Machineries",
     link: "equipments-and-machineries.html",
   },
@@ -46,7 +46,7 @@ const images = [
 const marqueeTrack = document.getElementById("marquee-track");
 
 function renderImages() {
-  const allImages = [...images, ...images, ...images, ...images]; // only 2 sets
+  const allImages = [...images, ...images, ...images, ...images, ...images, ...images, ...images, ...images]; // only 2 sets
 
   allImages.forEach((item) => {
     const link = document.createElement("a");
