@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="./assets/css/navbar.css" />
         <link rel="stylesheet" href="./assets/css/equipment.css" />
 
-        <title>Shree Vijaylaxmi International</title>
+        <title>Products | Shree Vijaylaxmi International</title>
     </head>
     <body>
         <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
@@ -48,7 +48,7 @@
             </section>
 
             <section
-                class="flex flex-col items-center gap-[64px] mt-10 md:mt-[64px]"
+                class="flex flex-col items-center gap-[40px] md:gap-[64px] mt-10 md:mt-[64px]"
                 id=""
             >
                 <section
@@ -59,10 +59,8 @@
             <div id="whatsapp-chatbot"></div>
         </main>
 
-        <div class="relative w-full mb-20 overflow-hidden group">
-            <div id="marquee-track" class="flex gap-[24px] animate-scroll">
-                <!-- JS will inject <a> elements with image + title -->
-            </div>
+        <div id="marquee-container" class="w-full overflow-x-auto px-4 mb-10">
+            <div class="flex gap-3" id="marquee-track"></div>
         </div>
 
         <footer id="footer"></footer>
