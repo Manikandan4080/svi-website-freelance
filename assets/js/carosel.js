@@ -51,6 +51,7 @@ function renderImages() {
     link.href = item.link;
     link.className =
       "relative group w-[250px] md:w-[350px] h-[350px] md:h-[450px] flex-shrink-0 block overflow-hidden rounded-[4px]";
+    
 
     const img = document.createElement("img");
     img.src = item.image;
@@ -67,14 +68,14 @@ function renderImages() {
 
     const overlay = document.createElement("div");
     overlay.className =
-      "absolute bottom-[20px] left-[20px] text-white text-[16px] font-semibold z-20 flex items-center gap-2";
+      "absolute bottom-[20px] left-[20px] text-white text-[16px] font-semibold z-20 flex items-center gap-1";
 
     const titleSpan = document.createElement("span");
     titleSpan.textContent = item.title;
     overlay.appendChild(titleSpan);
 
     const icon = document.createElement("i");
-    icon.className = "ph ph-arrow-up-right text-[18px] ml-1";
+    icon.className = "ph ph-arrow-up-right text-[18px]";
     overlay.appendChild(icon);
 
     link.appendChild(img);
@@ -115,8 +116,12 @@ function renderImagesAuto() {
     fadeBottom.className = "pointer-events-none absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black to-transparent z-10";
 
     const overlay = document.createElement("div");
-    overlay.className = "absolute bottom-[20px] left-[20px] text-white text-[16px] font-semibold z-20";
+    overlay.className = "absolute bottom-[20px] left-[20px] text-white text-[16px] font-semibold z-20 flex items-center gap-3 px-2";
     overlay.textContent = item.title;
+
+    const icon = document.createElement("i");
+    icon.className = "ph ph-arrow-up-right text-[18px] ml-1";
+    overlay.appendChild(icon);
 
     link.appendChild(img);
     link.appendChild(fadeTop);

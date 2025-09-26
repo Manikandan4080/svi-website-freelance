@@ -23,7 +23,11 @@
             href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
             rel="stylesheet"
         />
-        <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="./assets/images/favicon.svg"
+            type="image/x-icon"
+        />
 
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/index.css" />
@@ -35,8 +39,8 @@
     </head>
     <body>
         <!-- Navbar Component -->
-         <section id="section-bottom"></section>
-         <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
+        <section id="section-bottom"></section>
+        <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
 
         <main class="flex lg:gap-4 relative">
             <aside
@@ -342,13 +346,17 @@
             <div id="whatsapp-chatbot"></div>
         </main>
 
-        <div
-            id="marquee-container"
-            class="block md:hidden w-full overflow-x-auto px-4 mb-10"
-        >
-            <div class="flex gap-3" id="marquee-track"></div>
+        <div class="px-2">
+            <div
+                id="marquee-container"
+                class="block md:hidden w-full overflow-x-auto mb-10"
+            >
+                <div class="flex gap-3" id="marquee-track"></div>
+            </div>
         </div>
-        <div class="hidden md:block relative w-full overflow-hidden group mb-10">
+        <div
+            class="hidden md:block relative w-full overflow-hidden group mb-10"
+        >
             <div id="marquee-track-auto" class="flex gap-[24px] animate-scroll">
                 <!-- JS will inject <a> elements with image + title -->
             </div>
