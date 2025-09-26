@@ -28,12 +28,16 @@
         <link rel="stylesheet" href="./assets/css/index.css" />
         <link rel="stylesheet" href="./assets/css/navbar.css" />
 
-        <title>Guar Gum Equipments Machineries | Shree Vijaylaxmi International</title>
+        <title>
+            Guar Gum Equipments Machineries | Shree Vijaylaxmi International
+        </title>
     </head>
     <body>
+        <!-- Navbar Component -->
+        <section id="section-bottom"></section>
         <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
 
-        <main class="flex gap-4 relative">
+        <main class="flex lg:gap-4 relative">
             <section class="mt-[17vh] md:mt-[20dvh]">
                 <!-- Title -->
                 <h1
@@ -244,8 +248,18 @@
             <div id="whatsapp-chatbot"></div>
         </main>
 
-        <div id="marquee-container" class="w-full overflow-x-auto px-4 mb-10">
+        <div
+            id="marquee-container"
+            class="block md:hidden w-full overflow-x-auto px-4 mb-10"
+        >
             <div class="flex gap-3" id="marquee-track"></div>
+        </div>
+        <div
+            class="hidden md:block relative w-full overflow-hidden group mb-10"
+        >
+            <div id="marquee-track-auto" class="flex gap-[24px] animate-scroll">
+                <!-- JS will inject <a> elements with image + title -->
+            </div>
         </div>
         <footer id="footer"></footer>
 

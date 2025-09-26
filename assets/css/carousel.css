@@ -10,3 +10,19 @@
   width: max-content;
   gap: 16px; /* optional spacing between items */
 }
+
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  display: flex;
+  min-width: 200%;   /* track is twice as wide (two sets of items) */
+  animation: scroll 30s linear infinite;
+}
+
+.group:hover .animate-scroll {
+  animation-play-state: paused;
+}

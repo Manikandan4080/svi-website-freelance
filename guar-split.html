@@ -33,9 +33,11 @@
         <title>Guar Gum Split | Shree Vijaylaxmi International</title>
     </head>
     <body>
-        <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
+        <!-- Navbar Component -->
+         <section id="section-bottom"></section>
+         <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
 
-        <main class="flex gap-4 relative">
+        <main class="flex lg:gap-4 relative">
             <aside
                 class="sticky hidden lg:block top-0 left-0 h-[100dvh] w-fit md:pl-[40px] md:pr-[20px]"
             >
@@ -103,7 +105,7 @@
                                 href="./guar-churi.html"
                                 class="text-[16px] gilroy-regular text-black"
                             >
-                                Guar Churi
+                                Animal Feed (Guar Churi)
                             </a>
                         </li>
 
@@ -330,7 +332,7 @@
                         <a
                             href="./animal-feed.html"
                             class="w-full md:w-fit gilroy-regular py-[20px] px-[60px] text-[16px] border border-[#E6E6E6] rounded-full flex justify-center items-center gap-[10px] text-nowrap"
-                            >Animal Feed <i class="ph ph-caret-right"></i
+                            >Guar Korma <i class="ph ph-caret-right"></i
                         ></a>
                     </div>
                 </section>
@@ -339,8 +341,16 @@
             <div id="whatsapp-chatbot"></div>
         </main>
 
-        <div id="marquee-container" class="w-full overflow-x-auto px-4 mb-10">
+        <div
+            id="marquee-container"
+            class="block md:hidden w-full overflow-x-auto px-4 mb-10"
+        >
             <div class="flex gap-3" id="marquee-track"></div>
+        </div>
+        <div class="hidden md:block relative w-full overflow-hidden group mb-10">
+            <div id="marquee-track-auto" class="flex gap-[24px] animate-scroll">
+                <!-- JS will inject <a> elements with image + title -->
+            </div>
         </div>
 
         <footer id="footer"></footer>

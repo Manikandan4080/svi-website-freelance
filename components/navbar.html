@@ -1,21 +1,20 @@
-<!-- Navbar Component -->
 <nav
-    class="navbar sticky top-0 left-0 right-0 px-[20px] md:px-[36px] py-[20px]"
+    class="navbar fixed top-0 left-0 right-0 px-[20px] md:px-[36px] py-[20px]"
 >
     <div class="flex items-center justify-between w-full">
         <!-- Logo -->
         <div class="hidden lg:flex items-center space-x-2">
-            <a href="index.html"
-                ><i class="ph ph-globe"></i>
-                <span class="text-[14px] font-[400]"
+            <a class="flex items-center space-x-2" href="index.html"
+                ><img class="h-[20px] w-[25px]" src="assets/images/Logo.svg" alt="SVI">
+                <span class="text-[14px] font-[400] uppercase"
                     >Shree Vijaylaxmi International</span
                 ></a
             >
         </div>
         <div class="flex lg:hidden items-center space-x-2">
-            <a href="index.html"
-                ><i class="ph ph-globe"></i>
-                <span class="text-[14px] font-[400]">Shre</span></a
+            <a class="flex items-center space-x-2" href="index.html"
+                ><img class="h-[20px] w-[25px]" src="assets/images/Logo.svg" alt="SVI">
+                <span class="text-[14px] font-[400] uppercase">SVI</span></a
             >
         </div>
 
@@ -86,7 +85,7 @@
                             target="_blank"
                             href="guar-churi.html"
                             class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                            >Guar Churi</a
+                            >Animal Feed (Guar Churi)</a
                         >
                         <a
                             target="_blank"
@@ -132,17 +131,17 @@
 </nav>
 
 <!-- Mobile Menu Overlay -->
-<aside id="menu-overlay" class="menu-overlay z-[9000]"></aside>
+<aside id="menu-overlay" class="menu-overlay z-[9998]"></aside>
 
 <!-- Mobile Menu -->
 <aside
     id="mobile-menu"
-    class="mobile-menu w-[100%] md:w-[50%] z-[9000] overflow-auto relative"
+    class="mobile-menu w-[100%] md:w-[50%] z-[9999] overflow-auto relative"
 >
     <div class="flex flex-col h-full">
         <!-- Mobile Menu Header -->
         <div
-            class="flex items-center justify-end p-[12px] z-[9001] border-b border-gray-200 sticky top-0 bg-white"
+            class="flex items-center justify-end p-[12px] z-[9999] border-b border-gray-200 sticky top-0 bg-white"
         >
             <button
                 id="close-menu-btn"
@@ -154,13 +153,12 @@
 
         <!-- Mobile Menu Items -->
         <div class="flex-1 bg-white">
-            <div class="flex flex-col gap-[36px] p-[24px]">
+            <div class="flex flex-col gap-[24px] p-[24px]">
                 <a
                     href="index.html"
                     class="desktop-nav-item text-[14px] font-medium uppercase"
                     >Home</a
                 >
-                <div class="h-[1px] w-full bg-[#E6E6E6]"></div>
                 <a
                     href="about.html"
                     class="desktop-nav-item text-[14px] font-medium uppercase"
@@ -175,43 +173,43 @@
                 <a
                     target="_blank"
                     href="food-grade-guar-gum.html"
-                    class="text-[14px] font-medium uppercase"
+                    class="text-[14px] px-4 font-medium uppercase"
                     >Food Grade Guar Gum</a
                 >
                 <a
                     target="_blank"
                     href="cationic-guar.html"
-                    class="text-[14px] font-medium uppercase"
+                    class="text-[14px] px-4 font-medium uppercase"
                     >Cationic Guar</a
                 >
                 <a
                     target="_blank"
                     href="guar-split.html"
-                    class="text-[14px] font-medium uppercase"
+                    class="text-[14px] px-4 font-medium uppercase"
                     >Guar Split</a
                 >
                 <a
                     target="_blank"
                     href="animal-feed.html"
-                    class="text-[14px] font-medium uppercase"
+                    class="text-[14px] px-4 font-medium uppercase"
                     >Animal Feed (Guar Korma)</a
                 >
                 <a
                     target="_blank"
                     href="guar-churi.html"
-                    class="text-[14px] font-medium uppercase"
-                    >Guar Churi</a
+                    class="text-[14px] px-4 font-medium uppercase"
+                    >Animal Feed (Guar Churi)</a
                 >
                 <a
                     target="_blank"
                     href="oil-gas-industry.html"
-                    class="text-[14px] font-medium uppercase"
+                    class="text-[14px] px-4 font-medium uppercase"
                     >Oil & Gas Industry</a
                 >
                 <a
                     target="_blank"
                     href="equipments-and-machineries.html"
-                    class="desktop-nav-item text-[14px] font-medium uppercase"
+                    class="desktop-nav-item px-4 text-[14px] font-medium uppercase"
                     >Equipments & Machineries </a
                 >
                 <div class="h-[1px] w-full bg-[#E6E6E6]"></div>
@@ -220,43 +218,9 @@
                     class="desktop-nav-item text-[14px] font-medium uppercase"
                     >Contact Us</a
                 >
-
-                <!-- <a
-                    href="food-grade-guar-gum.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
-                    >Food Grade Guar Gum</a
-                >
-                <a
-                    href="cationic-guar.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
-                    >Cationic Guar</a
-                >
-                <a
-                    href="guar-split.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
-                    >Guar Split</a
-                >
-                <a
-                    href="animal-feed.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
-                    >Animal Feed</a
-                >
-                <a
-                    href="guar-churi.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
-                    >Guar Churi</a
-                >
-                <a
-                    href="oil-gas-industry.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
-                    >Oil & Gas Industry</a
-                >
-                <a
-                    href="equipments-and-machineries.html"
-                    class="desktop-nav-item text-gray-700 hover:text-gray-900 text-[14px] font-medium uppercase"
-                    >Equipments & Machineries </a
-                > -->
             </div>
         </div>
     </div>
 </aside>
+
+<section id="section-bottom"></section>

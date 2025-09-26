@@ -32,7 +32,9 @@
         <title>Contact | Shree Vijaylaxmi International</title>
     </head>
     <body>
-        <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
+        <!-- Navbar Component -->
+         <section id="section-bottom"></section>
+         <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
 
         <main class="mt-10 lg:mt-[17dvh] mb-20">
             <!-- Contact Us Section -->
@@ -150,11 +152,16 @@
             </section>
 
             <div
-                id="marquee-container"
-                class="w-full overflow-x-auto px-4 mb-10"
-            >
-                <div class="flex gap-3" id="marquee-track"></div>
+            id="marquee-container"
+            class="block md:hidden w-full overflow-x-auto px-4 mb-10"
+        >
+            <div class="flex gap-3" id="marquee-track"></div>
+        </div>
+        <div class="hidden md:block relative w-full overflow-hidden group mb-10">
+            <div id="marquee-track-auto" class="flex gap-[24px] animate-scroll">
+                <!-- JS will inject <a> elements with image + title -->
             </div>
+        </div>
             <div id="whatsapp-chatbot"></div>
         </main>
 

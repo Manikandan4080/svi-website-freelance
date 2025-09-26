@@ -10,9 +10,10 @@
 
 /* Main navbar styles */
 .navbar {
-    background: white;
+    /* background: transparent; */
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
     transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 /* Mobile menu styles */
@@ -108,6 +109,9 @@
 
 .desktop-nav-item:hover::after {
     width: 100%;
+}
+.scrolled{
+    background: white !important;
 }
 
 /* Navbar scroll effect */
