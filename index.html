@@ -32,7 +32,8 @@
         <title>Shree Vijaylaxmi International</title>
     </head>
     <body>
-        <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
+        <!-- Navbar Component -->
+       <nav class="sticky top-0 z-[1000]" id="navbar"></nav>
 
         <main class="">
             <!-- Hero section -->
@@ -41,7 +42,7 @@
                 id="hero-section"
             >
                 <h1
-                    class="text-[20px] md:text-[26px] lg:text-[36px] mt-[15vh] w-[97%] md:w-[80%] lg:w-[50%] gilroy-medium heading-clamp"
+                    class="text-[20px] md:text-[26px] lg:text-[36px] mt-[20dvh] w-[97%] md:w-[80%] lg:w-[50%] gilroy-medium heading-clamp"
                 >
                     Pure & Natural Guar Gum Solutions, Crafted with Precision
                     and Quality.
@@ -214,8 +215,21 @@
                 </div>
 
                 <!-- Marquee Slider -->
-                <div id="marquee-container" class="w-full overflow-x-auto px-4">
+                <div
+                    id="marquee-container"
+                    class="block md:hidden w-full overflow-x-auto px-4"
+                >
                     <div id="marquee-track"></div>
+                </div>
+                <div
+                    class="hidden md:block relative w-full overflow-hidden group"
+                >
+                    <div
+                        id="marquee-track-auto"
+                        class="flex gap-[24px] animate-scroll"
+                    >
+                        <!-- JS will inject <a> elements with image + title -->
+                    </div>
                 </div>
             </section>
 

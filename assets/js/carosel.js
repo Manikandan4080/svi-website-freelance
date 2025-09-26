@@ -86,3 +86,49 @@ function renderImages() {
 }
 
 renderImages();
+
+
+
+
+
+
+
+const marqueeTrackAuto = document.getElementById("marquee-track-auto");
+
+function renderImagesAuto() {
+  const allImages = [...images, ...images, ...images, ...images]; // only 2 sets
+
+  allImages.forEach((item) => {
+    const link = document.createElement("a");
+    link.href = item.link;
+    link.className = "relative group w-[250px] md:w-[350px] h-[350px] md:h-[450px] flex-shrink-0 block overflow-hidden rounded-[4px]";
+
+    const img = document.createElement("img");
+    img.src = item.image;
+    img.alt = item.alt;
+    img.className = "w-full h-full object-cover object-center";
+
+    const fadeTop = document.createElement("div");
+    fadeTop.className = "pointer-events-none absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-black/40 to-transparent z-10";
+
+    const fadeBottom = document.createElement("div");
+    fadeBottom.className = "pointer-events-none absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black to-transparent z-10";
+
+    const overlay = document.createElement("div");
+    overlay.className = "absolute bottom-[20px] left-[20px] text-white text-[16px] font-semibold z-20";
+    overlay.textContent = item.title;
+
+    link.appendChild(img);
+    link.appendChild(fadeTop);
+    link.appendChild(fadeBottom);
+    link.appendChild(overlay);
+    marqueeTrackAuto.appendChild(link);
+  });
+}
+
+
+renderImagesAuto();
+
+
+
+renderImagesAuto();
