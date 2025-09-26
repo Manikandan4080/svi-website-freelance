@@ -74,9 +74,14 @@ function initNavbar() {
     window.addEventListener("scroll", () => {
         const navbar = document.querySelector(".navbar");
         const path = window.location.pathname;
-        const page = path.substring(path.lastIndexOf("/") + 1);
-        const heroSection = page === "index.html"? document.getElementById("hero-section") : document.getElementById("section-bottom");
-        console.log(page)
+        let page = path.substring(path.lastIndexOf("/") + 1);
+        if (page === "" || page === "/") {
+            page = "index.html";
+        }
+        const heroSection =
+            page === "index.html"
+                ? document.getElementById("hero-section")
+                : document.getElementById("section-bottom");
         if (navbar) {
             if (heroSection) {
                 const heroBottom = heroSection.getBoundingClientRect().bottom;
@@ -84,7 +89,6 @@ function initNavbar() {
                     navbar.classList.add("scrolled");
                 } else {
                     navbar.classList.remove("scrolled");
-                    
                 }
             }
         }
