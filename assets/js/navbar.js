@@ -75,9 +75,11 @@ function initNavbar() {
         const navbar = document.querySelector(".navbar");
         const path = window.location.pathname;
         let page = path.substring(path.lastIndexOf("/") + 1);
+        console.log("page ==> ",page)
         if (page === "" || page === "/") {
             page = "index.html";
         }
+        console.log("page===> ",page)
         const heroSection =
             page === "index.html"
                 ? document.getElementById("hero-section")
