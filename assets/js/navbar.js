@@ -76,6 +76,7 @@ function initNavbar() {
         const path = window.location.pathname;
         const page = path.substring(path.lastIndexOf("/") + 1);
         const heroSection = page === "index.html"? document.getElementById("hero-section") : document.getElementById("section-bottom");
+        console.log(page)
         if (navbar) {
             if (heroSection) {
                 const heroBottom = heroSection.getBoundingClientRect().bottom;
@@ -83,6 +84,7 @@ function initNavbar() {
                     navbar.classList.add("scrolled");
                 } else {
                     navbar.classList.remove("scrolled");
+                    
                 }
             }
         }
