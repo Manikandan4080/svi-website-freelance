@@ -1,28 +1,48 @@
 #marquee-container {
-  overflow-x: auto;            /* allow manual scroll */
-  scroll-behavior: smooth;     /* smooth scroll */
-  -webkit-overflow-scrolling: touch;
-  white-space: nowrap;
+    overflow-x: auto; /* allow manual scroll */
+    scroll-behavior: smooth; /* smooth scroll */
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
 }
 
 #marquee-track {
-  display: flex;
-  width: max-content;
-  gap: 16px; /* optional spacing between items */
+    display: flex;
+    width: max-content;
+    gap: 16px; /* optional spacing between items */
 }
 
+#dummy-track::-webkit-scrollbar {
+    display: none !important;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll 30s linear infinite;
+}
+
+.carousel-group {
+    display: flex;
+    flex-shrink: 0;
+    gap: 16px;
+    padding-right: 16px;
+}
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
-.animate-scroll {
-  display: flex;
-  min-width: 200%;   /* track is twice as wide (two sets of items) */
-  animation: scroll 30s linear infinite;
-}
-
-.group:hover .animate-scroll {
-  animation-play-state: paused;
+/* Pause animation on hover */
+.carousel-container:hover .carousel-track {
+    animation-play-state: paused;
 }

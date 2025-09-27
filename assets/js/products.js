@@ -24,7 +24,7 @@ const applications = [
         icon: "ph ph-leaf",
         title: "Animal Feed (Guar Korma)",
         image:"./assets/images/timeline-img-1.svg",
-        link: "./animal-feed.html",
+        link: "./guar-kroma.html",
         desc: "High-protein, sustainable feed ingredient for livestock and poultry.",
     },
     {

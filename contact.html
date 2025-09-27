@@ -32,7 +32,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/index.css" />
         <link rel="stylesheet" href="./assets/css/navbar.css" />
-        <link rel="stylesheet" href="./assets/css/equipment.css" />
+        <link rel="stylesheet" href="./assets/css/carousel.css" />
 
         <title>Contact | Shree Vijaylaxmi International</title>
     </head>
@@ -44,7 +44,7 @@
         <main class="mt-10 lg:mt-[17dvh] mb-20">
             <!-- Contact Us Section -->
             <section
-                class="flex flex-col items-center gap-[40px] md:gap-[64px] mt-5 md:mt-[64px]"
+                class="flex flex-col items-center gap-[40px] md:gap-[64px] mt-[17dvh] md:mt-[64px]"
             >
                 <div
                     class="introduction flex items-center w-[90%] md:w-[70%] justify-center"
@@ -156,28 +156,21 @@
                 </div>
             </section>
 
-            <div class="px-2">
-                <div
-                    id="marquee-container"
-                    class="block md:hidden w-full overflow-x-auto mb-10"
-                >
-                    <div class="flex gap-3" id="marquee-track"></div>
-                </div>
-            </div>
-            <div
-                class="hidden md:block relative w-full overflow-hidden group mb-10"
-            >
-                <div
-                    id="marquee-track-auto"
-                    class="flex gap-[24px] animate-scroll"
-                >
-                    <!-- JS will inject <a> elements with image + title -->
-                </div>
-            </div>
             <div id="whatsapp-chatbot"></div>
         </main>
 
-        <footer id="footer"></footer>
+        <!-- Marquee Slider -->
+        <div
+            id="marquee-container"
+            class="block md:hidden w-full overflow-x-auto px-4"
+        >
+            <div id="marquee-track"></div>
+        </div>
+        <div class="carousel-container hidden md:block">
+            <div id="carousel-track" class="carousel-track"></div>
+        </div>
+
+        <footer id="footer" class="mt-20"></footer>
 
         <!-- Importing scripts -->
         <script src="./assets/js/main.js"></script>

@@ -27,7 +27,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/index.css" />
         <link rel="stylesheet" href="./assets/css/navbar.css" />
-        <link rel="stylesheet" href="./assets/css/equipment.css" />
+        <link rel="stylesheet" href="./assets/css/carousel.css" />
         <link
             rel="shortcut icon"
             href="./assets/images/favicon.svg"
@@ -65,23 +65,19 @@
             <div id="whatsapp-chatbot"></div>
         </main>
 
-        <div class="px-2">
-            <div
-                id="marquee-container"
-                class="block md:hidden w-full overflow-x-auto mb-10"
-            >
-                <div class="flex gap-3" id="marquee-track"></div>
-            </div>
-        </div>
+         <!-- Marquee Slider -->
         <div
-            class="hidden md:block relative w-full overflow-hidden group mb-10"
+            id="marquee-container"
+            class="block md:hidden w-full overflow-x-auto px-4"
         >
-            <div id="marquee-track-auto" class="flex gap-[24px] animate-scroll">
-                <!-- JS will inject <a> elements with image + title -->
+            <div id="marquee-track"></div>
+        </div>
+        <div class="carousel-container hidden md:block">
+            <div id="carousel-track" class="carousel-track">
             </div>
         </div>
 
-        <footer id="footer"></footer>
+        <footer id="footer" class="mt-20"></footer>
 
         <!-- Importing scripts -->
         <script src="./assets/js/main.js"></script>
